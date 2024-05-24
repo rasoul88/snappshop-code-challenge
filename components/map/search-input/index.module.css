@@ -1,0 +1,64 @@
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 4rem);
+  height: 3rem;
+  background-color: var(--white-color);
+  box-shadow: 0 0 4px rgb(33, 33, 33, 20%);
+  border-radius: 0.25rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  transform: translateX(-50);
+}
+
+.search {
+  cursor: pointer;
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.inputContainer > label {
+  cursor: pointer;
+  position: absolute;
+  right: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray-color);
+  line-height: 1.5;
+}
+
+.inputContainer > label > span {
+  color: var(--primary-color);
+}
+
+.inputContainer > input {
+  border: none;
+  caret-color: var(--primary-color);
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  padding: 0.5rem 2.5rem;
+  font-family: inherit;
+}
+
+.inputContainer > button {
+  border: none;
+  height: 100%;
+  position: absolute;
+  left: 0.5rem;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.loading {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
